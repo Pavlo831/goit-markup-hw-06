@@ -679,6 +679,7 @@ margin-bottom: 8px
 .soc-footer {
 display: flex;
 align-items: baseline;
+flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -736,6 +737,7 @@ align-items: baseline;
       color: #FFFFFF;
       display: flex;
       gap: 24px;
+      flex-wrap:wrap;
       
     }
     .footer-paragraf {
@@ -784,7 +786,8 @@ align-items: baseline;
 
     }
     .footer-soc {
-      margin-right: 80px;
+     /** margin-right: 80px;*/
+     
     }
       
     
@@ -1050,6 +1053,24 @@ input:focus {
  .hero {
   max-width: 428px;
  } 
+ .footer {
+  max-width: 428px;
+ }
+ .foter-logo {
+  max-width: 268px;
+  max-width: unset;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+ }
+ .footer-soc {
+  max-width: unset;
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+    
+ }
 
 }
 
@@ -1079,9 +1100,9 @@ input:focus {
               width: calc((100% - 120px) / 3);
       
             }
-                        .hero {
-                          max-width: 768px;
-                        }
+               .hero {
+               max-width: 768px;
+              }
 
 }
 @media screen and (min-width:1140px) {
