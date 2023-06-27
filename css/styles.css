@@ -188,7 +188,7 @@ margin-left: auto;
 .hero {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   url(../images/heroimage.jpg);
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,7 +243,6 @@ margin-left: auto;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
-
    
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -260,6 +259,7 @@ margin-left: auto;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 72px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   
   
@@ -1148,10 +1148,18 @@ input:focus {
       gap: 72px;
      }
      .fon {
-      max-width: unset;
+      /* max-width: 584px; */
         width: calc((100% - 72px) / 2);
         margin-left: auto;
           margin-right: auto;
+          height: auto;
+     }
+     .container-team {
+      max-width: 584px;
+      height: auto;
+     }
+     .title-list-team {
+      max-width: 100%;
      }
      
      .customers {
@@ -1163,6 +1171,9 @@ input:focus {
       }
       .hero {
       max-width: 768px;
+     }
+     .hero-btn {
+      margin-top: 36px;
      }
     .footer {
   max-width: 768px;
