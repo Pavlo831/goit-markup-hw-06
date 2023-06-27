@@ -714,6 +714,7 @@ margin-bottom: 8px
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
+  
   }
 
 .footer-logo span {
@@ -738,13 +739,13 @@ margin-bottom: 8px
 .soc-footer {
 display: flex;
 align-items: baseline;
-flex-wrap: wrap;
+flex-wrap: wrap; /** змінив */
 }
 
 .footer-logo {
   margin-right: 120px;
 
-}
+} 
 
 .footer-soc-logo {
   display: flex;
@@ -760,7 +761,9 @@ flex-wrap: wrap;
 
  }
  .foter-logo {
-   margin-right: 120px;
+   margin-right: auto;
+   margin-left: auto;
+  /* margin-right: 120px; */
 
 
  }
@@ -796,7 +799,7 @@ flex-wrap: wrap;
       color: #FFFFFF;
       display: flex;
       gap: 24px;
-      flex-wrap:wrap;
+      flex-wrap:wrap; /**------*/ 
       
     }
     .footer-paragraf {
@@ -848,7 +851,6 @@ flex-wrap: wrap;
       margin-right: 80px;
      
     }
-      
     
 
 .paragraf-soc{
@@ -1054,8 +1056,8 @@ input:focus {
 
     }
     
-         .input:focus+.modal-person {
-           fill: #4D5AE5;
+    .input:focus+.modal-person {
+     fill: #4D5AE5;
          }
     
     .modal-link {
@@ -1109,8 +1111,8 @@ input:focus {
       max-width: unset;
       width: calc((100% - 120px) / 2);
  }
- .hero {
-  max-width: 428px;
+ /* .hero {
+  max-width: 428px; */
  } 
  .footer {
   max-width: 428px;
@@ -1120,16 +1122,16 @@ input:focus {
  .foter-logo {
   max-width: 268px;
   max-width: unset;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   
 
  }
  .footer-soc {
   max-width: unset;
   max-width: 268px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
     
  }
 
@@ -1199,21 +1201,24 @@ input:focus {
 }
 @media screen and (min-width:1140px) {
   .container {
-  max-width: 1158px;
+  max-width: 1140px;
+  }
+  .hero {
+    max-width: 1140px;
+    
   }
   .hero-title {
     
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  max-width: 496px;
-  margin-bottom: 48px;  
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 48px;
   
 }
 .hero-btn {
@@ -1283,29 +1288,14 @@ input:focus {
         }
       .footer {
         max-width: 1140px;
-        margin-left: auto;
-          margin-right: auto;
       }
-      .foter-logo {
-        max-width: 1140px;
-        
-    
-        
+       .soc-footer {
         display: flex;
-        
-
-      }
-      .footer-soc {
-        max-width: unset;
-        max-width: 1140px;
-        
+       }
       
+       .soc-footer {
         display: flex;
-          
-      }
-      .form-footre {
-        display: flex;
-      }
+       }
     
 
       }
