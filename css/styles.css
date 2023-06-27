@@ -312,6 +312,9 @@ color: #2E2F42;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
 
 
 
@@ -408,6 +411,10 @@ color:#434455;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
  
  /** font-size: 16px;
   line-height: 1.5;
@@ -455,6 +462,7 @@ margin-bottom: 8px
       letter-spacing: 0.02em;
       color: #434455;
       text-align: center;
+
   }
 
 
