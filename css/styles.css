@@ -302,13 +302,28 @@ width: 100%;
   
 }
 .title-list-subtitle {
-  background-color: #ffffff;
+color: #2E2F42;
+  text-align: center;
+  /* Header 2 */
+  font-size: 36px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+
+
+
+
+
+  /** background-color: #ffffff;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
   
 
   
@@ -386,10 +401,18 @@ gap: 24px;
 
 
 .title-item-text {
+color:#434455;
+  
   font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+ 
+ /** font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: #434455; */
   
 }
 
@@ -786,7 +809,7 @@ flex-wrap: wrap;
 
     }
     .footer-soc {
-     /** margin-right: 80px;*/
+      margin-right: 80px;
      
     }
       
@@ -1055,6 +1078,8 @@ input:focus {
  } 
  .footer {
   max-width: 428px;
+  margin-left: auto;
+    margin-right: auto;
  }
  .foter-logo {
   max-width: 268px;
@@ -1092,17 +1117,37 @@ input:focus {
         margin-left: auto;
           margin-right: auto;
      }
-            .customers {
-              max-width: 768px;
-            }
-      
-            .customers-list-item {
-              width: calc((100% - 120px) / 3);
-      
-            }
-               .hero {
-               max-width: 768px;
-              }
+     
+     .customers {
+      max-width: 768px;
+      }
+    
+      .customers-list-item {
+      width: calc((100% - 120px) / 3);
+      }
+      .hero {
+      max-width: 768px;
+     }
+    .footer {
+  max-width: 768px;
+  margin-left: auto;
+    margin-right: auto;
+ }
+ .foter-logo {
+  max-width: 768px;
+  max-width: unset;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+ }
+ .footer-soc {
+  max-width: unset;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+    
+ }
 
 }
 @media screen and (min-width:1140px) {
@@ -1120,6 +1165,22 @@ input:focus {
          .title-list {
           gap: 24px;
          }
+          .title-list-subtitle {
+          background-color: #ffffff;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1.2;
+          letter-spacing: 0.02em;
+          color: #2e2f42;
+          
+          }
+          .title-item-text {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #434455;
+  
+}
          .item {
           display: flex;
          }
@@ -1139,5 +1200,31 @@ input:focus {
         .hero {
           max-width: 1140px;
         }
+      .footer {
+        max-width: 1140px;
+        margin-left: auto;
+          margin-right: auto;
+      }
+      .foter-logo {
+        max-width: 1140px;
+        
+    
+        
+        display: flex;
+        
 
-}
+      }
+      .footer-soc {
+        max-width: unset;
+        max-width: 1140px;
+        
+      
+        display: flex;
+          
+      }
+      .form-footre {
+        display: flex;
+      }
+    
+
+      }
