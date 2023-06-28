@@ -204,7 +204,8 @@ margin-left: auto;
 .hero-title {
   
   display: flex;
-  width: 320px;
+  max-width: 100%;
+   width: 320px; 
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
@@ -537,6 +538,7 @@ margin-bottom: 8px
       justify-content: center;
       gap: 24px;
       margin-bottom: 72px;
+      flex-wrap: wrap; /**------*/
     }
   
     .portfolio-img {
@@ -544,6 +546,7 @@ margin-bottom: 8px
       flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 48px;
+      flex-wrap: wrap; /**----------*/
     }
     .portfolio {
       padding-top: 96px;
@@ -714,6 +717,7 @@ margin-bottom: 8px
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
+
   
   }
 
@@ -761,6 +765,7 @@ flex-wrap: wrap; /** змінив */
 
  }
  .foter-logo {
+  max-width: 428px;
    margin-right: auto;
    margin-left: auto;
   /* margin-right: 120px; */
@@ -1089,10 +1094,15 @@ input:focus {
   .container {
     max-width: 428px;
   }
-  .title-list-item {
-    max-width: 396px;
+  
+  .hero-title {
+    max-width: 100%;
   }
-  .box-fon{
+ .title-list-item {
+  max-width: 396px;
+ }
+
+  .box-fon {
     display: none;
   }
   .item {
@@ -1113,7 +1123,7 @@ input:focus {
  }
  /* .hero {
   max-width: 428px; */
- } 
+ 
  .footer {
   max-width: 428px;
   margin-left: auto;
@@ -1134,13 +1144,23 @@ input:focus {
   margin-right: auto; */
     
  }
-
 }
+
+
 
 @media screen and (min-width:768px) {
   .container {
     max-width: 768px;
   }
+    .hero {
+        max-width: 768px;
+      }
+      .hero-btn {
+        margin-top: 36px;
+      }
+      .hero-title {
+        max-width: 496px;
+      }
      .title-list-item {
        max-width: unset;
       width: calc((100% - 72px) / 2);
@@ -1171,12 +1191,7 @@ input:focus {
       .customers-list-item {
       width: calc((100% - 120px) / 3);
       }
-      .hero {
-      max-width: 768px;
-     }
-     .hero-btn {
-      margin-top: 36px;
-     }
+     
     .footer {
   max-width: 768px;
   margin-left: auto;
@@ -1219,7 +1234,7 @@ input:focus {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 48px;
-  
+   
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
