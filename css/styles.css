@@ -74,6 +74,8 @@ img {
 .header-container {
 display: flex;
 margin-left: auto;
+align-items: center;
+
 /* margin-top: 22,5px;
   margin-bottom: 23px; */
 
@@ -119,6 +121,7 @@ margin-left: auto;
 
 .header-navigat {
   display: flex;
+  align-items: center;
    /* align-items: center; */
   }
    .mob-menu {
@@ -190,6 +193,7 @@ margin-left: auto;
        font-weight: 700;
        line-height: 40px;
        letter-spacing: 0.72px;
+       margin-top: 284px;
        
       
      }
@@ -201,7 +205,7 @@ margin-left: auto;
         line-height: 24px;
         letter-spacing: 0.4px;
         color: #434455;
-        padding-top: 40px;
+        margin-top: 40px;
      }
   
      .mob-soc-item {
@@ -839,6 +843,7 @@ margin-bottom: 8px
   color: #4d5ae5;
   display: inline-block;
   margin-bottom: 16px;
+ 
 
   
   }
@@ -877,6 +882,7 @@ flex-wrap: wrap; /** змінив */
   display: flex;
   gap: 16px;
   margin-right: auto;
+  margin-left: auto;
 
   
 }
@@ -927,8 +933,11 @@ flex-wrap: wrap; /** змінив */
       display: flex;
       gap: 24px;
       flex-wrap:wrap; /**------*/ 
+     
       
     }
+   
+
     .footer-paragraf {
       margin-bottom: 16px;
       font-weight: 500;
@@ -936,6 +945,8 @@ flex-wrap: wrap; /** змінив */
       line-height: 1.5;
       letter-spacing: 0.02em;
       color: #ffffff;
+      
+     
 
     }
     .footer-icon {
@@ -957,11 +968,13 @@ flex-wrap: wrap; /** змінив */
       background-color: #4D5AE5;
       border: none;
       border-radius: 4px;
+      margin-left: auto;
+        margin-right: auto;
 
     }
 
     .footer-input {
-      width: 264px;
+      width: 398px;
       height: 40px;
       border: 1px solid #ffffff;
       background-color: transparent;
@@ -972,10 +985,15 @@ flex-wrap: wrap; /** змінив */
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
       color: #ffffff;
+      
 
     }
     .footer-soc {
-      margin-right: 80px;
+      /* margin-right: 80px; */
+      margin-left: auto;
+        margin-right: auto;
+        padding-top: 72px;
+
      
     }
     
@@ -1290,6 +1308,7 @@ input:focus {
           font-style: normal;
           gap: 40px;
           margin-left: auto;
+          flex-direction: column;
         }
 
                 .header-menu-link {
@@ -1450,6 +1469,13 @@ input:focus {
   margin-right: auto;
     
  }
+ .footer-input {
+   width: 264px;
+ }
+ .footer-form {
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 }
 @media screen and (min-width:1140px) {
@@ -1468,6 +1494,7 @@ input:focus {
       font-style: normal;
       gap: 40px;
       margin-left: auto;
+      flex-direction: row;
     }
   .mob-menu-btn {
     display: none;
