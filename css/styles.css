@@ -1428,6 +1428,7 @@ input:focus {
      
     .footer {
   max-width: 768px;
+  max-width: 100%;
   margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
@@ -1574,6 +1575,7 @@ input:focus {
         }
       .footer {
         max-width: 1140px;
+        max-width: 100%;
       }
        .soc-footer {
         display: flex;
