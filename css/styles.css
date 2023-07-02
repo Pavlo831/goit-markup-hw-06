@@ -471,7 +471,7 @@ color: #2E2F42;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 8px;
-  display: flex;
+ 
   flex-direction: column;
   align-self: stretch;
 
@@ -513,7 +513,7 @@ gap: 24px;
 
 .team {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
     
   
@@ -523,7 +523,7 @@ gap: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: #f4f4fd;
-  padding: px 0;
+  padding: 96px 0;
   
 }
 .team-soc-logo {
@@ -798,7 +798,7 @@ margin-bottom: 8px
 
     .customers-list {
       display: flex;
-      gap: 16px;
+      gap: 72px 16px;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
@@ -1276,11 +1276,11 @@ input:focus {
  /* .hero {
   max-width: 428px; */
  
- .footer {
+ /* .footer {
   max-width: 428px;
   margin-left: auto;
     margin-right: auto;
- }
+ } */
  .foter-logo {
   max-width: 268px;
   max-width: unset;
@@ -1310,6 +1310,11 @@ input:focus {
 @media screen and (min-width:768px) {
   .container {
     max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    justify-content: safe;
+
   }
      .header
     {
@@ -1320,6 +1325,11 @@ input:focus {
           display: flex;
           align-items: center;
           gap: 40px;
+        }
+        .header-contakt {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
         }
     
         .header-cont {
@@ -1347,7 +1357,7 @@ input:focus {
         
                 .header-cont-link {
                   font-style: normal;
-                  font-size: 16px;
+                  font-size: 12px;
                   line-height: 1.5;
                   letter-spacing: 0.02em;
                   color: #434455;
@@ -1441,6 +1451,11 @@ input:focus {
      .title-list {
       gap: 72px;
      }
+     
+     .title-list-subtitle {
+      text-align: left;
+     
+     }
      .fon {
       /* max-width: 584px; */
         width: calc((100% - 72px) / 2);
@@ -1455,13 +1470,19 @@ input:focus {
      .title-list-team {
       max-width: 100%;
      }
+    .team {
+     display: flex;
+     gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+     }
      
      .customers {
       max-width: 768px;
       }
     
       .customers-list-item {
-      width: calc((100% - 120px) / 3);
+      width: calc((100% - 24px) / 3);
       }
      
     .footer {
@@ -1471,8 +1492,7 @@ input:focus {
     margin-right: auto;
     flex-wrap: wrap;
     gap: 72px 24px;
-      max-width: 584px;
- }
+    }
  .foter-logo {
   max-width: 768px;
   max-width: unset;
@@ -1494,6 +1514,37 @@ input:focus {
  .footer-form {
   margin-left: auto;
   margin-right: auto;
+ }
+ .form-footre {
+display: flex;
+
+     
+ }
+ .footer-btn {
+   min-width: 165px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Roboto", sans-serif;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+   cursor: pointer;
+   background-color: #4D5AE5;
+   border: none;
+   border-radius: 4px;
+   margin-top: 0;
+  
+
+ }
+ .footer-paragraf {
+  text-align: left;
+  
+
+
  }
 
 }
@@ -1602,6 +1653,12 @@ input:focus {
 }
          .item {
           display: flex;
+          
+         }
+         .team {
+          display: flex;
+          gap: 24px;
+          flex-wrap: wrap;
          }
          .customers {
            max-width: 1140px;
@@ -1612,6 +1669,14 @@ input:focus {
           max-width: unset;
     
          }
+         .customers-list {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+         }
+
     .fon {
         max-width: unset;
         width: calc((100% - 72px) / 4);
