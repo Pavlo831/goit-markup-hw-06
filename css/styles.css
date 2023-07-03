@@ -1510,12 +1510,16 @@ input:focus {
     }
      
     .footer {
-  max-width: 768px;
+  max-width: 584px;
   max-width: 100%;
   margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
     gap: 72px 24px;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; */
+
     }
  .foter-logo {
   max-width: 768px;
@@ -1529,8 +1533,10 @@ input:focus {
  .footer-soc {
   max-width: unset;
   max-width: 768px;
-  /* margin-left: auto;
-  margin-right: auto; */
+   
+     flex-wrap: wrap;
+      row-gap: 60px;
+      justify-content: safe; 
     
  }
  .footer-input {
@@ -1586,6 +1592,11 @@ display: flex;
 .footer-text {
   margin-left: 0;
   margin-right: 0;
+  
+}
+.footer-paragraf {
+  text-align: left;
+  
 }
 .modal {
   width: 408px;
@@ -1768,4 +1779,8 @@ display: flex;
             .paragraf-soc {
               text-align: left;
             }
+            .footer-paragraf {
+            text-align: left;
+            }
+
     }
