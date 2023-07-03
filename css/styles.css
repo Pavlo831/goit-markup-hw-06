@@ -515,6 +515,7 @@ gap: 24px;
   display: flex;
   gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
     
   
 }
@@ -1325,7 +1326,7 @@ input:focus {
 
 @media screen and (min-width:768px) {
   .container {
-    max-width: 535px;
+    max-width:768px;
     /* display: flex; */
     /* flex-wrap: wrap;
     row-gap: 60px;
@@ -1479,7 +1480,7 @@ input:focus {
         
      }
      .container-team {
-      max-width: 584px;
+      max-width: px;
       height: auto;
      }
      .title-list-team {
@@ -1487,9 +1488,9 @@ input:focus {
      }
     .team {
      display: flex;
-     gap: 64px 24px;
+     /* gap: 64px 24px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
      }
      
      .customers {
@@ -1510,7 +1511,7 @@ input:focus {
     }
      
     .footer {
-  max-width: 584px;
+  max-width: 768px;
   max-width: 100%;
   margin-left: auto;
     margin-right: auto;
@@ -1532,19 +1533,18 @@ input:focus {
  }
  .footer-soc {
   max-width: unset;
-  max-width: 768px;
+  max-width: 584px;
    
-     flex-wrap: wrap;
-      row-gap: 60px;
-      justify-content: safe; 
+    
     
  }
  .footer-input {
    width: 264px;
  }
  .footer-form {
-  margin-left: auto;
+  
   margin-right: auto;
+  margin-top: 0;
  }
  .form-footre {
 display: flex;
@@ -1555,10 +1555,20 @@ display: flex;
 
    /* align-items: baseline;
    flex-wrap: wrap; */
- flex-wrap: wrap;
- row-gap: 60px;
+ 
+
+ 
  justify-content: space-around;
- }
+  flex-wrap: wrap;
+    row-gap: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    
+    gap: 72px 24px;
+
+
+}
 
 
  .footer-btn {
@@ -1578,7 +1588,8 @@ display: flex;
    border: none;
    border-radius: 4px;
    margin-top: 0;
-   
+  margin-left: 0;
+    margin-right: 0;
   
 
  }
@@ -1596,7 +1607,6 @@ display: flex;
 }
 .footer-paragraf {
   text-align: left;
-  
 }
 .modal {
   width: 408px;
