@@ -872,8 +872,7 @@ margin-bottom: 8px
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  margin-left: auto;
-  margin-right: auto;
+ 
 
 }
 .soc-footer {
@@ -1314,8 +1313,11 @@ input:focus {
    margin-right: auto;
    margin-top: 72px;
 
-
- }
+}
+.footer-text {
+ margin-left: auto;
+  margin-right: auto;
+}
 }
 
 
@@ -1574,12 +1576,24 @@ display: flex;
   
 
  }
- .footer-paragraf {
+.footer-logo {
   text-align: left;
-  
+}
 
-
- }
+.paragraf-soc {
+  text-align: left;
+}
+.footer-text {
+  margin-left: 0;
+  margin-right: 0;
+}
+.modal {
+  width: 408px;
+    min-height: 584px;
+    width: 408px;
+      min-height: 584px;
+      overflow: hidden;
+  }
 
 }
 @media screen and (min-width:1140px) {
@@ -1606,12 +1620,21 @@ display: flex;
    .header-contakt {
          display: flex;
           flex-wrap: wrap;
+          flex-direction: initial;
         
         }
+                .header-cont-link {
+                  font-style: normal;
+                  font-size: 16px;
+                  line-height: 1.5;
+                  letter-spacing: 0.02em;
+                  color: #434455;
+                  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
 
 
   .hero {
-  max-width: 1140px;
+  max-width: 1440px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   url(../images/heroimage.jpg);
   /* max-width: 1440px; */
@@ -1676,7 +1699,7 @@ display: flex;
          }
           .title-list-subtitle {
           background-color: #ffffff;
-          font-weight: 500;
+          font-weight: 400;
           font-size: 20px;
           line-height: 1.2;
           letter-spacing: 0.02em;
@@ -1739,4 +1762,10 @@ display: flex;
         margin-right: auto;
 
       }
+            .footer-logo{
+              text-align: left;
+            }
+            .paragraf-soc {
+              text-align: left;
+            }
     }
