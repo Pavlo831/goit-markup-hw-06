@@ -1461,19 +1461,25 @@ input:focus {
        
       }
      .title-list-item {
-       max-width: unset;
-      width: calc((100% - 72px) / 2);
+      
+      width: 356px;
   
      }
      .title-list {
-      gap: 72px;
+      gap: 72px 24px;
      }
      
      .title-list-subtitle {
       text-align: left;
      
      }
-     .fon {
+         .team {
+           display: flex;
+           gap: 24px;
+           flex-wrap: wrap;
+           justify-content: center; }
+     
+           .fon {
     
         width: calc((100% - 72px) / 2);
            
@@ -1498,7 +1504,7 @@ input:focus {
       }
     
       .customers-list-item {
-      width: calc((100% - 72px) / 3);
+      width: 168px;
       }
       .customers-list {
       display: flex;
@@ -1543,7 +1549,7 @@ input:focus {
  }
  .footer-form {
   
-  margin-right: auto;
+  padding-left: 60px;
   margin-top: 0;
  }
  .form-footre {
@@ -1558,7 +1564,7 @@ display: flex;
  
 
  
- justify-content: space-around;
+ /* justify-content: space-around; */
   flex-wrap: wrap;
     row-gap: 60px;
     
@@ -1720,7 +1726,7 @@ display: flex;
          }
           .title-list-subtitle {
           background-color: #ffffff;
-          font-weight: 400;
+          font-weight: 500;
           font-size: 20px;
           line-height: 1.2;
           letter-spacing: 0.02em;
@@ -1732,6 +1738,7 @@ display: flex;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #434455;
+            font-weight: 400;
   
 }
          .item {
@@ -1764,9 +1771,7 @@ display: flex;
         max-width: unset;
         width: calc((100% - 72px) / 4);
     }
-        .hero {
-          max-width: 1140px;
-        }
+       
       .footer {
         max-width: 1140px;
         max-width: 100%;
